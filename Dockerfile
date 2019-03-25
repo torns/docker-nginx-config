@@ -19,7 +19,7 @@ ENV PROXY_PASS 'http:\/\/127.0.0.1:80'
 ADD ./default.conf /etc/nginx/conf.d/
 
 # 复制构建后的代码
-COPY ./dist  /usr/share/nginx/html/
+# COPY ./dist  /usr/share/nginx/html/
 
 # 复制config脚本
 COPY ./config.sh "/opt/"
